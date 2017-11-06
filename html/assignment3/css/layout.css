@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/Open_Sans/OpenSans-Semibold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('/home/mohit/Desktop/Modus-versus/fonts/Open_Sans/OpenSans-Extrabold.ttf') format('ttf');
+}
+
+
+.main-container-wrap{
+	/*background: yellow;*/
+	max-width: 93.75em;   /*1500px*/
+}
+/*------------------ -------------------HEADER----------------------------------------*/
+.header-wrapper{
+	width: 100%;
+	/*background:blue;*/
+}
+/*------------------ HEADER TOP--------------------*/
+.header-top{
+ /*padding: 28px 0px 31px 0px;*/
+ background: url("../images/head-bg.png") repeat-x;
+}
+.header-top-container{
+	max-width: 73.125em; /*1170px*/
+	margin: 0 auto;
+}
+/*------------------ HEADER BOTTOM--------------------*/
+.header-bot{
+	background: url("../images/head-bot-bg.png") repeat-x;
+}
+.header-bot-container{
+	max-width: 73.125em; /* 1170px */
+	margin: 0 auto;
+	position: relative;
+}
+
+/*------------------ -------------------BODY----------------------------------------*/
+.body-wrapper {
+	background:#f3f3f3;
+	color: #7f8c8c;
+}
+.body-container{
+	max-width: 73.125em; /* 1170px */
+	margin:0 auto;
+    padding-top: 37px;
+
+}
+.button-container{
+	background: #f3f3f3;
+}
+.button-container button{
+	width: 40px;
+	height: 40px;
+    background-color: #98a3a3;
+}
+.button-container button:hover{
+    background-color: #e2534b;
+}
+.main-body{
+	    padding-top: 73px;
+}
+.related-projects{
+	background:url('../images/line.png')0 50% repeat-x;
+	margin-top: 68px;
+}
+.related-projects-container{
+	padding-bottom: 87px;
+}
+.project-images{
+	margin-top: 56px;
+	/*width: 100%;*/
+}
+/*------------------ -------------------FOOTER----------------------------------------*/
+.footer-wrapper{
+	background: #5dccc1;
+}
+.footer-top{
+	background: url("../images/footer-back.png") repeat-x;
+	font-size: 13px;
+}
+/*.footer-top-container{
+	max-width: 73.125em; 
+	margin: 0 auto;
+	padding-top: 47px;
+}
+.footer-bot{
+background-color:#6ab3ac;
+}
+.footer-bot-container{
+	max-width: 73.125em;
+	margin: 0 auto;
+}
+*/
+
+
+
+
+
+
+.footer-wrapper{
+	color: #ffffff;
+	margin: auto;
+	background: #76c7c0;
+}
+
+.footer-upper-content,.footer-lower-content{
+	max-width: 73.125em;/* 1170px */
+	margin: auto;
+}
+.about-modus,.company, .community,.blog
+{
+	float: left;
+	font-size: 13px;
+}
+
+.about-modus{
+	width: 30.85470085%; /*361px*/
+	padding-right: 37px;
+}
+.company{
+	width: 17.09401709%; /*200px*/
+}
+.community{
+	width: 17.09401709%;   /*suru ma 198px thiyo, ani pachi 200px i.e 17.09401709% ko haleko*/
+}
+.blog{
+	width: 30.85470085%;
+}
+.social-icons{
+	font-size: 20px;
+}
+.social-icons ul li{
+	padding: 0 15px;
+	line-height: 50px;
+}
+
+.social-icons ul li:last-child{
+	padding-right:15px;
+
+}
+.copyright{
+	line-height: 50px;
+}
+
