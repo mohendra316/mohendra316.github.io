@@ -1,0 +1,14 @@
+#main-wrapper{
+	height:500px;
+	width: 500px;
+	background: red;
+	position: relative;
+}
+
+/*.dot{
+	width: 10px;
+	height: 10px;
+	background:blue;
+	position:absolute;
+}
+*/

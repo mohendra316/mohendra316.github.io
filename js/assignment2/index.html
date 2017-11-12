@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.w3-content ul{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+  width: 600px;
+  display: inline;
+ position: absolute;
+ top:0;
+ left:0;
+}
+.w3-content ul li{
+  float: left;
+/*  display: inline;*/
+/*  width: auto;*/
+}
+.w3-content{
+overflow: hidden;
+position: relative;
+}
+
+
+</style>
+<body>
+
+
+<div class="w3-content" style="width:200px; height:135px">
+<ul id="list">
+  <li><img class="mySlides" src="images/image1.jpg" style="width:200px; height:135px"></li>
+  <li><img class="mySlides" src="images/image2.jpg" style="width:200px; height:135px"></li>
+  <li><img class="mySlides" src="images/image3.jpg" style="width:200px; height:135px"></li>
+</ul>
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="leftSlide()">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="rightSlide()">Next ❯</button>
+  </div>
+</div>
+
+<script>
+var arr = document.getElementsByTagName('li');
+console.log(arr[0]);
+console.log(arr);
+var counter=0
+var x=0;
+length=200;
+var ulist= document.getElementById('list');
+
+var slides = document.getElementsByTagName('li');
+console.log(slides.length);
+function rightSlide(){
+  counter++;
+  console.log("count "+counter);
+  var newlength=length*counter;
+  var next = setInterval(function(){
+    if(x!=newlength){
+       ulist.style.left='-'+x+'px';
+      x++;
+    }
+    if(x==newlength){
+      clearInterval(next);
+    }
+  } ,10);
+}
+
+function leftSlide(){ 
+  counter--;
+  console.log("count "+counter);
+  var newlength=length*counter;
+  var previous=setInterval(function(){
+    if(x!=newlength){
+      ulist.style.left='-'+x+'px';
+      x--;
+    }
+    if(x==newlength){
+      clearInterval(previous);
+    }
+  } ,10);
+}
+
+
+</script>
+
+</body>
+</html>
