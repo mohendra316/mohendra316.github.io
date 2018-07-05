@@ -1,0 +1,102 @@
+*{ box-sizing: border-box;}
+body{
+    font:16px Arial;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+/*.active {*/
+    /*background-color: #4CAF50;*/
+/*}*/
+.autocomplete{
+    position: relative;
+    display: inline-block;
+}
+input{
+    border:1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+input[type=text]{
+    background-color: #f1f1f1;
+    width:100%;
+}
+input[type=button]{
+    background-color: Green;
+    color:#fff;
+}
+.autocomplete-itenm{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+/*------------------------------------------------------------------------------------------------------*/
+#general-information{
+    width: 100%;
+    background-color:red; 
+}
+#personal-detail{
+    float: left;
+    width: 50%;
+    background-color:yellow;
+}
+#company-detail{
+    float: right;
+    width: 50%;
+    background-color:grey;
+}
+#education-detail{
+    float: left;
+    width: 50%;
+    background-color:orange;
+}
+#emergency-detail{
+    float: right;
+    width: 50%;
+    background-color:aqua;
+}
